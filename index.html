@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Loong Personal Portfolio Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style> -->
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo" data-full-name="ChengSheng Loong" data-short-name="CS"> ChengSheng<span> Loong</span></a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#resume">Resume</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Cheng</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>A diligent multi-lingual student currently studying MSc Automotive Engineering with years of experience in automobile design and manufacturing. A skilled worker with extensive experience in practical training and practices in real-life projects. Excellent team player with high organizational, communication and time management skills. I am eager to pursue a challenging position that can implement my skills and improve further.
+            </p>
+
+            <div class="btn-group">
+                <a href="resume\ChengShengLoong_Resume_0824.pdf" download="CSLoongResume" target="_blank" class="btn">Download my CV</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+            <div class="home-img">
+                <img src="experience\fsec\Loong Cheng Sheng (Loong).jpg" alt="">
+            </div>
+     
+    </section>
+
+    <section class="resume" id="resume">
+        <h2 class="heading">Resume</h2>
+       
+        <div class="sub-section">
+           
+            <div class="sub-aboutme">
+                <h3>About Me</h3>
+                <div class="info">
+                    <p>Name <br> <span>Cheng Sheng Loong</span></p>
+                    <p>Nationality<br> <span>Malaysian</span></p>
+                    <p>Phone<br> <span>(+44) 7518 473 499</span></p>
+                    <p>Email<br> <span>ha4loong@gmail.com</span></p>
+                    <p>Languages<br> <span>English, Mandarin, Cantonese, Malay</span></p>
+                </div>
+            </div>
+
+            <div class="sub-education">
+                <h3>Education</h3>
+                <div class="edu-btn-group">
+                    <button class="big-button" onclick="openPopUP('edu-popup1')">
+                        <h4>MSc Automotive Engineering</h4>
+                        <h5><i>2023 - Now</i></h5>
+                        <p>University of Hertfordshire</p>
+                    </button> 
+                    
+                    <button class="big-button" onclick="openPopUP('edu-popup2')">
+                        <h4>BEng Mechanical Engineering</h4>
+                        <h5><i>2016 - 2020</i></h5>
+                        <p>The Hong Kong Polytechnic University</p>
+                    </button>
+                    
+                    <!-- <button class="big-button" onclick="showContent('Content2')">
+                        <h3>Exchange Programe</h3>
+                        <h4>2019</h4>
+                        <p>Czech Technical Univerisity in Prague</p>
+                    </button> -->
+                    
+                </div>
+            </div>
+            
+            <div class="sub-experience">
+                <h3>Experience</h3>
+                <div class="ex-btn-group">
+                    <button class="big-button" onclick="openPopUP('exe-popup1')">
+                        <h4>Planning and Control Team Executive & Mechanical Design Team Leader</h4>
+                        <h5><i>2023 - Now</i></h5>
+                        <p>UH Racing Autonomous Team (Formula Student Autonomous)</p>
+                    </button>
+                    <button class="big-button" onclick="openPopUP('exe-popup2')">
+                        <h4>Acoustic Assistant Consultant</h4>
+                        <h5><i>2020 - 2023</i></h5>
+                        <p>Wilson Ho and Associates Limited</p>
+                    </button>
+                <!-- </div>
+                <div class="ex-btn-group"> -->
+                    <button class="big-button" onclick="openPopUP('exe-popup3')">
+                        <h4>Deputy Technical Officer</h4>
+                        <h5><i>2016 - 2021</i></h5>
+                        <p>HK PolyU Racing Team (Formula Student Electric Car)</p>
+                    </button>
+                    <button class="big-button" onclick="openPopUP('exe-popup4')">
+                        <h4>Engineering Trainee</h4>
+                        <h5><i>2017</i></h5>
+                        <p>Jinan Shidai Shijin Testing Machine Group Co.Ltd</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="skill-set">
+            <div class="skill-bar software">
+                <h3>Software</h3>
+                <div class="skill-title">Solidworks, SolidEdge, CatiaV5, AutoCAD</div>
+                <div class="bar-container">
+                    <div class="skill-progress drawing"></div>
+                </div>
+                <div class="skill-title">Ansys Structural Analysis, Ansys LS-Dyna</div>
+                <div class="bar-container">
+                    <div class="skill-progress fea"></div>
+                </div>
+                <div class="skill-title">Ansys Fluent, CFX, Star CCM+</div>
+                <div class="bar-container">
+                    <div class="skill-progress cfd"></div>
+                </div>
+                <div class="skill-title">MATLAB, C++, Python, HTML</div>
+                <div class="bar-container">
+                    <div class="skill-progress coding"></div>
+                </div>
+            </div>
+            <div class="skill-bar technical">
+                <h3>Technical Skill</h3>
+                <div class="skill-title">Composite Lamination</div>
+                <div class="bar-container">
+                    <div class="skill-progress comp"></div>
+                </div>
+                <div class="skill-title">Welding</div>
+                <div class="bar-container">
+                    <div class="skill-progress weld"></div>
+                </div>
+                <div class="skill-title">Turning & Milling</div>
+                <div class="bar-container">
+                    <div class="skill-progress turn"></div>
+                </div>
+                <div class="skill-title">CNC&NCM</div>
+                <div class="bar-container">
+                    <div class="skill-progress cnc"></div>
+                </div>
+            </div>
+            <!-- <div class="skill-bar">
+                <h3>Language</h3>
+                <div class="skill-title">English</div>
+                <div class="bar-container">
+                    <div class="skill-progress eng"></div>
+                </div>
+                <div class="skill-title">Mandarin</div>
+                <div class="bar-container">
+                    <div class="skill-progress chi"></div>
+                </div>
+                <div class="skill-title">Cantonese</div>
+                <div class="bar-container">
+                    <div class="skill-progress cat"></div>
+                </div>
+                <div class="skill-title">Malay</div>
+                <div class="bar-container">
+                    <div class="skill-progress malay"></div>
+                </div>
+            </div> -->
+            <div class="skill-bar soft">
+                <h3>Soft Skill</h3>
+                <div class="skill-title">Project Management</div>
+                <div class="bar-container">
+                    <div class="skill-progress proj"></div>
+                </div>
+                <div class="skill-title">Communication</div>
+                <div class="bar-container">
+                    <div class="skill-progress com"></div>
+                </div>
+                <div class="skill-title">Adaptive</div>
+                <div class="bar-container">
+                    <div class="skill-progress adapt"></div>
+                </div>
+                <div class="skill-title">Time Management</div>
+                <div class="bar-container">
+                    <div class="skill-progress time"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="service-container">
+            <div class="img-container">
+                <div class="threeD">
+                    <img src="FSAI\FullCar.jpeg">
+                    <img src="FSEC\Whole Car.png">
+                    <img src="bumper\bumper.png">
+                    <img src="Hydraulic Claws\Whole.png" class="scale-down-img">
+                </div>
+                <div class="name-container">
+                    <h3>3D CAD Modelling</h3>
+                    
+                </div>
+            </div>
+            <div class="img-container">
+                <div class="imgfea">
+                    
+                    <img src="FSEC\Chassis Topology.png">
+                    <img src="bumper\2.png">
+                    <img src="Hydraulic Claws\Rack and Pinion.png">
+                    <img src="landing gear\4.png">
+                </div>
+                <div class="name-container">
+                    
+                    <h3>FEA Simulation</h3>
+                   
+                </div>
+            </div>
+            <div class="img-container">
+                <div class="imgcfd">
+                    <img src="FSEC\CFD Simulation.png">
+                    <img src="redbull\2.png">
+                    <img src="FSAI\CFD.jpeg">
+                    <img src="flame\2.jpg">
+                </div>
+                <div class="name-container">
+                    
+                    <h3>CFD Simulation</h3>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="name-container">
+            <h3>3D CAD Modelling</h3>
+            <h3>FEA Simulation</h3>
+            <h3>CFD Simulation</h3>
+        </div> -->
+        <div class="service-btn">
+            <a href="#portfolio">Learn More about My Work</a>
+            <a href="#contact">Use My Service</a>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Portfolio</h2>
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'fsec')">FS Electric Car</button>
+                <button class="tab-link" onclick="openTab(event, 'fsai')">FS Autonomous</button>
+                <button class="tab-link" onclick="openTab(event, 'acoustic')">Acoustic Project</button>
+                <button class="tab-link" onclick="openTab(event, 'other')">Other Engineering Project</button>
+                <!-- <button class="tab-link" onclick="openTab(event, 'wing')">Front Wing CFD</button>
+                <button class="tab-link" onclick="openTab(event, 'flame')">Flame Combustion</button>
+                <button class="tab-link" onclick="openTab(event, 'claw')">Hydraulic Claws</button>
+                <button class="tab-link" onclick="openTab(event, 'rwanda')">Voluntary Work</button> -->
+            </div>
+            <div id="fsec" class="tab-content">
+                <div class="content-container">
+                    <div class="content-left">
+                        <div class="content-left-title">
+                            <h2>Formula Student Electric Car</h2>
+                        </div>
+                        <div class="content-left-info">
+                            <p>Four years of experience in the Formula Student Electric Car (FSEC) competition in China region. This experience allows me to have a strong background in automobile 3D modeling design and manufacturing, not restricted to only mechanical system design such as chassis, aerodynamics, suspension, etc, but also includes electrical system design such as accumulator, wiring hardness, etc. Working as a team, also allows me to improve my vertical and horizontal communication skills as well as my problem-solving skills.</p>
+                            <br>
+                            <ul>
+                                <li>Chassis Design and Manufacture</li>
+                                <li>Aerodynamic System Design and Manufacture</li>
+                                <li>Accumulator Box Design and Manufacture</li>
+                                <li>Electrical Wire Hardness Manufacture</li>
+                            </ul>
+                        </div>
+                        <div class="content-left-keywords">
+                            <h3>Keywords</h3>
+                            <p>Solidworks, Ansys Fluent, Ansys CFX,  Ansys Structural Analysis, Ansys Topology, TIG Welding, MIG Welding, Composite Lamination, Tubular Chassis, Monocoque Chassis</p>
+                        </div>
+                        <div class="content-left-awards">
+                            <h3>Awards</h3>
+                            <p>Technical Inspection Award, 7th in Business Presentation</p>
+                        </div>
+                        <button class="readmore" onclick="openPopUP('port-popup1')">Read More</button>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-img-container">
+                            <div class="content-right-img">
+                                <img src="FSEC\Whole Car.png">
+                                <img src="FSEC\Chassis.png">
+                                <img src="FSEC\BatteryBox.png" >
+                                <img src="FSEC\Wing.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+
+            <div id="fsai" class="tab-content">
+                <div class="content-container">
+                    <div class="content-left">
+                        <div class="content-left-title">
+                            <h2>Formula Student Autonomous Car</h2>
+                        </div>
+                        <div class="content-left-info">
+                            <p>Autonomous driving is the trend of driving technology in the automotive industry. I have been gaining experience in autonomous driving by joining the UH Racing Autonomous Team and taking part in the DDT class of Formula Student Autonomous in Silverstone, UK for the latest season (July 2024). We are successful to obtain the overall 6th position in the competition.</p>
+                            <br>
+                            <ul>
+                                <li>Sensor Mount Design and Manufacture</li>
+                                <li>Local Planning and Control</li>
+                                <li>Race Line Strategy</li>
+                            </ul>
+                        </div>
+                        <div class="content-left-keywords">
+                            <h3>Keywords</h3>
+                            <p>Solidworks, CATIA V5, StarCCM+, Python, Matlab</p>
+                        </div>
+                        <div class="content-left-awards">
+                            <h3>Awards</h3>
+                            <p>6th in Overall FSAI Championship, 2nd in Overall Static Competition, 3rd in Design Presentation</p>
+                        </div>
+                        <button class="readmore" onclick="openPopUP('port-popup2')">Read More</button>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-img-container">
+                            <div class="content-right-img">
+                                <img src="FSAI\FullCar.jpeg">
+                                <img src="FSAI\SensorMount.jpeg">
+                                <img src="FSAI\MinimumCurvePath.png" >
+                                <img src="FSAI\WindTunnel.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+
+            <div id="acoustic" class="tab-content">
+                <div class="content-container">
+                    <div class="content-left">
+                        <div class="content-left-title">
+                            <h2>Acoustic Projects</h2>
+                        </div>
+                        <div class="content-left-info">
+                            <p>My acoustic projects focus on comprehensive noise assessment, including both airborne and groundborne noise. In the construction and tender stages, I conduct detailed evaluations to identify potential noise impacts according to Hong Kong Technical Memorandum. For airborne noise, I assess sources like machinery and site activities in accordance with ISO standard, ensuring compliance with regulations. For groundborne noise, I analyze vibrations transmitted through the ground. These assessments help in designing effective noise mitigation strategies, ensuring that projects meet environmental standards and community expectations</p>
+                            <br>
+                            <ul>
+                                <li>MTR C1201 Tung Chung West Station and Tunnels Tender Stage</li>
+                                <li>Trunk Road T2 and Cha Kwo Ling Tunnel Construction Stage</li>
+                                <li>Central Kowloon Route – Central Construction Stage</li>
+                            </ul>
+                            
+                        </div>
+                        <div class="content-left-keywords">
+                            <h3>Keywords</h3>
+                            <p>Construction Noise, Sound Power Level, Insertion Loss, Noise Assessment, A-weighted, Noise Mitigation and Control</p>
+                        </div>
+                        <!-- <div class="content-left-awards">
+                            <h3>Awards</h3>
+                            <p>Technical Inspection Award, 7th in Business Presentation</p>
+                        </div> -->
+                        <button class="readmore" onclick="openPopUP('port-popup3')">Read More</button>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-img-container">
+                            <div class="content-right-img">
+                                <img src="Acoustic\Mitigate1.jpg">
+                                <img src="Acoustic\measure1.jpeg" >
+                                <img src="Acoustic\measure2.jpeg" class="scale-up-img" style="padding: 0rem 13% 0rem;">
+                                <img src="Acoustic\Mitigate2.jpg" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+
+            <div id="other" class="tab-content">
+                <div class="content-container">
+                    <div class="content-left">
+                        <div class="content-left-title">
+                            <h2>Other Engineering Projects</h2>
+                        </div>
+                        <div class="content-left-info">
+                            <p>Alongside major projects, I regularly engage in small and one-off projects to sharpen my technical skills. These include simulating tasks, exploring web development using HTML and CSS, and solving debugging challenges. These smaller tasks offer hands-on experience, allowing me to experiment with new tools and stay current with industry trends. They enhance my versatility across different technologies and complement my larger projects by providing continuous learning opportunities.</p>
+                            <br>
+                            <ul>
+                                <li>Nose Landing Gear Design Analysis</li>
+                                <li>Car Bumper Design Optimization</li>
+                                <li>RedBull Front Wing CFD Simulation</li>
+                                <li>Non-premixed Flame Combustion on EGR System Simulation</li>
+                                <li>Hydraulic Claws Design</li>
+                                <li>Service Learning Project in Rwanda</li>
+                            </ul>
+                        </div>
+                        <div class="content-left-keywords">
+                            <h3>Keywords</h3>
+                            <p>CATIA V5, Crash Pulse, Crashworthiness, Contact Analysis, StarCCM+, Meshing, Coupled FlowAnsys Fluent, NOx Pollution, EGR, SolidEdge, Testing Machine, Electrical Wiring Hardness, Rwanda, Voluntary Work</p>
+                        </div>
+                        <!-- <div class="content-left-awards">
+                            <h3>Awards</h3>
+                            <p>Technical Inspection Award, 7th in Business Presentation</p>
+                        </div> -->
+                        <button class="readmore" onclick="openPopUP('port-popup4')">Read More</button>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-img-container">
+                            <div class="content-right-img">
+                                <img src="bumper\bumper.png">
+                                <img src="landing gear\whole.png">
+                                <img src="Hydraulic Claws\Whole.png" >
+                                <img src="redbull\3.png" class="scale-up-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-info">
+                <input type="hidden" name="access_key" value="7247c233-375d-4b31-894f-39dabdfa65bd">
+                <div class="input-box">
+                    <div class="inputfield">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <!-- <div class="error-text">Full Name cannot be blank</div> -->
+                    </div>
+                    <div class="inputfield">
+                        <input type="email" name="email" placeholder="Your Email Address" class="contact-inputs" required>
+                        <!-- <div class="error-text">Email Address cannot be blank</div> -->
+                    </div>
+                </div>
+               
+                <div class="input-box">
+                    <div class="inputfield">
+                        <input type="text" name="phone" placeholder="Your Phone Number" class="contact-inputs" required>
+                        <!-- <div class="error-text">Phone Number cannot be blank</div> -->
+                    </div>
+                    <div class="inputfield">
+                        <input type="text" name="subject" placeholder="Your Subject" class="contact-inputs" required>
+                        <!-- <div class="error-text">Subject cannot be blank</div> -->
+                    </div>
+                </div>
+                
+                <div class="messagefield">
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <!-- <div class="error-text">Message cannot be blank</div> -->
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+
+    <div class="popup" id="edu-popup1">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>MSc Automotive Engineering</h4>
+                <h5><i>09/2023 - 01/2025 (Expected)</i></h5>
+                <h6>University of Hertfordshire</h6>
+            </div>
+            <div class="popup-info">
+                <h5>Award:</h5>
+                <div class="info-container">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 70%;">
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Expected Classification</i><br>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>First Class</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Expected Cumulative GPA</i><br>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>4.1/4.5</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </div>
+                <h5>Academic Result:</h5>
+                <div class="info-container">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 70%;">
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Automotive Dynamics & Safety</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>97%</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>CAE & Applications</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>90%</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Advanced engines and power systems</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>90%</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Automotive Materials & Manufacture</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>83%</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>CFD & Applications</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>83%</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Electric Vehicle Technolog</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>85%</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </div>
+               
+            </div>
+            <div class="fadeimg-container">
+                <div class="fadeimg-img">
+                    <img src="edu\msc\self.jpeg" id="img1" class="fadeimg active">
+                    <img src="edu\msc\parttime.jpeg" id="img2" class="fadeimg ">
+                    <img src="edu\msc\comp.jpeg" id="img3" class="fadeimg ">
+                    <img src="edu\msc\class.jpeg" id="img4" class="fadeimg ">
+                </div>
+                
+            </div>
+            <div class="fade-dot">
+                <button type="button" class="fade active" onclick="activeIMG('img1',event,'edu-popup1')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img2',event,'edu-popup1')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img3',event,'edu-popup1')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img4',event,'edu-popup1')"></button>
+            </div>
+            <div class="back">
+                <button type="button" onclick="closePopUP('edu-popup1')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="edu-popup2">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>BEng Mechanical Engineering</h4>
+                <h5><i>09/2016 - 08/2020</i></h5>
+                <h6>The Hong Kong Polytechnic University</h6>
+            </div>
+            <div class="popup-info">
+                <h5>Award:</h5>
+                <div class="info-container">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 70%;">
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Classification</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>First Class</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Cumulative GPA</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>3.9/4.5</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Dean’s Honours List</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>17/18 and 16/17</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </div>
+                <h5>Academic Result:</h5>
+                <div class="info-container">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 70%;">
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Mechanic of Material</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>A</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Principal of Sound and Vibration</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>A</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Heat and Mass Transfer</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>A</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Aerodynamics</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>A+</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Fundamental of Material Science and Engineering</i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>A</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="subject">
+                                    <i class='bx bxs-right-arrow'>Final Year Capstone Project</i>
+                                    <p style="font-family: 'Times New Roman', Times, serif;margin-left: 1.6rem;">Title: Simulation Based Optimization for Photoelectrochemical (PEC) Reactors</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="result">
+                                    <p>A</p>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                    
+                </div>
+               
+            </div>
+            <div class="fade-bottom">
+                <div class="fadeimg-container">
+                    <div class="fadeimg-img">
+                        <img src="edu\beng\school.jpeg" id="img1" class="fadeimg active">
+                        <img src="edu\beng\exchg.jpg" id="img2" class="fadeimg ">
+                        <img src="edu\beng\formulaE.jpg" id="img3" class="fadeimg ">
+                        <img src="edu\beng\volunteer.jpg" id="img4" class="fadeimg ">
+                    </div>
+                    
+                </div>
+                <div class="fade-dot">
+                    <button type="button" class="fade active" onclick="activeIMG('img1',event,'edu-popup2')"></button>
+                    <button type="button" class="fade" onclick="activeIMG('img2',event,'edu-popup2')"></button>
+                    <button type="button" class="fade" onclick="activeIMG('img3',event,'edu-popup2')"></button>
+                    <button type="button" class="fade" onclick="activeIMG('img4',event,'edu-popup2')"></button>
+                </div>
+            </div>
+            
+            <div class="back">
+                <button type="button" onclick="closePopUP('edu-popup2')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="exe-popup1">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Planning and Control Team Executive & Mechanical Design Team Leader</h4>
+                <h5><i>09/2023 - 01/2025 (Expected)</i></h5>
+                <h6>UH Racing Autonomous Team (Formula Student Autonomous)</h6>
+            </div>
+            <div class="popup-info">
+                <h5>Introduction:</h5>
+                <p style="font-family: 'Times New Roman', Times, serif;margin-left: 1rem;">Autonomous driving is the trend of driving technology in the automotive industry. I have been gaining experience in autonomous driving by joining the UH Racing Autonomous Team and taking part in the DDT class of Formula Student Autonomous in Silverstone, UK for the latest season (July 2024). We are successful to obtain the <span style="color:#ffd000;">6th position in the competition.</span> </p>
+                <br>
+                <h5>Key Roles:</h5>
+                <i class='bx bxs-right-arrow'>In collaboration with the Perception Team, program the path planning and control of the driverless vehicle with the data received from the camera, lidar and sensors with the combination of ROS2 Galactic and Python 3.10 in Ubuntu 20.04.</i>
+                <i class='bx bxs-right-arrow'>Design and manufacture mounts for sensors, cameras, lidar, etc with Solidworks.</i>
+                <i class='bx bxs-right-arrow'>Race car local planning and control using midpoint between cones; Race car optimum race line with quadratic programming optimization using weightage between minimum curvature or shortest path in Matlab and Python; Race line velocity profile with feedforward and feed backward algorithm.</i>
+                <i class='bx bxs-right-arrow'>As an exchange of sponsorship with the manufacturer, an additional project is conducted by helping the manufacturer to manufacture, install and test the aerodynamic packages (front wing, rear wing and diffuser) on 1983 Caterham 7.</i>
+                <i class='bx bxs-right-arrow'>CFD Analysis on sensor cover with StarCCM+</i>
+                <i class='bx bxs-right-arrow'>Wind tunnel testing with a 1:7 scaled-down model to validate the result with CFD analysis.</i>
+            </div>
+            <div class="fadeimg-container">
+                <div class="fadeimg-img">
+                    <img src="experience\fsai\KPI_3394.JPG" id="img1" class="fadeimg active">
+                    <img src="experience\fsai\KPI_3689.JPG" id="img2" class="fadeimg ">
+                    <img src="experience\fsai\KPI_3696.JPG" id="img3" class="fadeimg ">
+                    <img src="experience\fsai\self.jpeg" id="img4" class="fadeimg ">
+                </div>
+                
+            </div>
+            <div class="fade-dot">
+                <button type="button" class="fade active" onclick="activeIMG('img1',event,'exe-popup1')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img2',event,'exe-popup1')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img3',event,'exe-popup1')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img4',event,'exe-popup1')"></button>
+            </div>
+            <div class="back">
+                <button type="button" onclick="closePopUP('exe-popup1')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="exe-popup2">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Acoustic Assistant Consultant</h4>
+                <h5><i>08/2020 - 08/2023</i></h5>
+                <h6>Wilson Ho and Associates Limited</h6>
+            </div>
+            <div class="popup-info">
+                <h5>Introduction:</h5>
+                <p style="font-family: 'Times New Roman', Times, serif;margin-left: 1rem;">Working as an acoustic assistant consultant, I provided acoustic consultancy services for construction noise including providing construction airborne noise (ABN), ground-borne/structural noise (GBN) assessment, Construction Noise Permit (CNP) application (for night work), Quality Powered Mechanical Equipment (QPME) application according to the law of Hong Kong to ensure the noise of the construction activities is within the regulation.</p>
+                <br>
+                <h5>Key Roles:</h5>
+                <i class='bx bxs-right-arrow'>Sound Power Level measurement according to ISO 3746 or Directive 2000/13/EC to obtain the noise level of the machines.</i>
+                <i class='bx bxs-right-arrow'>Insertion Loss (IL) measurement according to ISO 10847 to obtain the noise reduction level of noise mitigation.</i>
+                <i class='bx bxs-right-arrow'>Tunnel Noise Attenuation / Overall Barrier Effect measurement to obtain the noise reduction level of the tunnels.</i>
+                <i class='bx bxs-right-arrow'>GBN assessment, monitoring and control of Drill & Break (D&B), Tunnel Boring Machine (TBM) excavation, etc.</i>
+                <i class='bx bxs-right-arrow'>ABN assessment, monitoring and control of construction site activities.</i>
+                <i class='bx bxs-right-arrow'>Design/Advise noise mitigation measures (noise barrier, noise enclosure, acoustic door, etc) and control (separation of working zones, separation of working machines, separation of working period, etc) with possible latest technology.</i>
+                <br>
+                <br>
+                <h5>Key Projects</h5>
+                <i class='bx bxs-hard-hat'>Trunk Road T2 and Cha Kwo Ling Tunnel Construction Stage | 2020-2023</i><br>
+                <i class='bx bxs-hard-hat'>Central Kowloon Route – Central Construction Stage | 2020-2023</i><br>
+                <i class='bx bxs-hard-hat'>The 51st Internoise Conference 2022 in Glasgow: Presentation Presenter | 2022</i>
+                <p style="font-family: 'Times New Roman', Times, serif;margin-left: 2.8rem;">Title: Sheet Piling Tuned Mass Damper for Construction Control</p>
+            </div>
+            <div class="fadeimg-container">
+                <div class="fadeimg-img">
+                    <img src="Acoustic\enclosure.jpeg" id="img1" class="fadeimg active">
+                    <img src="Acoustic\measure1.jpeg" id="img2" class="fadeimg ">
+                    <img src="Acoustic\Mitigate1.jpg" id="img3" class="fadeimg ">
+                    <img src="Acoustic\enclosure3.jpeg" id="img4" class="fadeimg ">
+                </div>
+                
+            </div>
+            <div class="fade-dot">
+                <button type="button" class="fade active" onclick="activeIMG('img1',event,'exe-popup2')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img2',event,'exe-popup2')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img3',event,'exe-popup2')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img4',event,'exe-popup2')"></button>
+            </div>
+            <div class="back">
+                <button type="button" onclick="closePopUP('exe-popup2')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="exe-popup3">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Deputy Technical Officer</h4>
+                <h5><i>11/2016 - 08/2021</i></h5>
+                <h6>HK PolyU Racing Team (Formula Student Electric Car)</h6>
+            </div>
+            <div class="popup-info">
+                <h5>Introduction:</h5>
+                <p style="font-family: 'Times New Roman', Times, serif;margin-left: 1rem;">Four years of experience in the Formula Student Electric Car (FSEC) competition in China region. This experience allows me to have a strong background in automobile 3D modeling design and manufacturing, not restricted to only mechanical system design such as chassis, aerodynamics, suspension, etc, but also includes electrical system design such as accumulator, wiring hardness, etc. Working as a team, also allows me to improve my vertical and horizontal communication skills as well as my problem-solving skills. We obtained the <span style="color:#ffd000;">Technical Inspection Passing Award in 2019 </span>and managed to make the car participate in the Autocross event.</p>
+                <br>
+                <h5>Key Roles:</h5>
+                <i class='bx bxs-right-arrow'>Vehicle system (Chassis system, aerodynamic packages, suspension, gearbox and accumulator) design with the use of Solidworks, KISSsoft, KISSsys, Lotus, etc.</i><br>
+                <i class='bx bxs-right-arrow'>Tubular chassis manufacturing with TIG welding; Aerodynamic packages manufacturing with resin infusion</i><br>
+                <i class='bx bxs-right-arrow'>Suspension and gearbox manufacturing with CNC cutting</i><br>
+                <i class='bx bxs-right-arrow'>Accumulator box manufacturing with CNC punching, bending and welding</i><br>
+                <i class='bx bxs-right-arrow'>Overall electrical and electronic wiring harness manufacturing.</i><br>
+                <i class='bx bxs-right-arrow'>Mechanical structural analysis with Solidworks, Ansys Structural and Ansys Topology.</i><br>
+                <i class='bx bxs-right-arrow'>Torsional kit design and manufacture to validate results with structural analysis on chassis.</i><br>
+                <i class='bx bxs-right-arrow'>CFD Analysis on aerodynamic packages and accumulator internal cooling flow with Ansys.</i><br>
+                <i class='bx bxs-right-arrow'>Wind tunnel testing with a 1:10 scaled-down model to validate the result with CFD analysis.</i><br>
+                <i class='bx bxs-right-arrow'>Carbon fiber composite monocoque chassis design.</i><br>
+                <i class='bx bxs-right-arrow'>Carbon fiber composite sandwich structure panel lamination (wet layup, resin infusion, autoclave, etc) and testing</i><br>
+                <i class='bx bxs-right-arrow'>Self-made/customized part with turning & milling, Stick welding/MIG welding, water jet, 3D printing, etc.</i><br>
+
+            </div>
+            <div class="fadeimg-container">
+                <div class="fadeimg-img">
+                    <img src="experience\fsec\all.jpg" id="img1" class="fadeimg active">
+                    <img src="experience\fsec\Chassis Team 2.jpg" id="img2" class="fadeimg ">
+                    <img src="experience\fsec\person2.jpg" id="img3" class="fadeimg ">
+                    <img src="experience\fsec\present.jpg" id="img4" class="fadeimg ">
+                </div>
+                
+            </div>
+            <div class="fade-dot">
+                <button type="button" class="fade active" onclick="activeIMG('img1',event,'exe-popup3')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img2',event,'exe-popup3')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img3',event,'exe-popup3')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img4',event,'exe-popup3')"></button>
+            </div>
+            <div class="back">
+                <button type="button" onclick="closePopUP('exe-popup3')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="exe-popup4">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Engineering Trainee</h4>
+                <h5><i>06/2016 - 07/2027</i></h5>
+                <h6>Jinan Shidai Shijin Testing Machine Group Co.Ltd</h6>
+            </div>
+            <div class="popup-info">
+                <h5>Introduction:</h5>
+                <p style="font-family: 'Times New Roman', Times, serif;margin-left: 1rem;">This is a six-week internship in Jinan, China. I was assigned to the Design Department and managed to accomplish the task of designing hydraulic clamping jaws for a universal testing machine.</p>
+                <br>
+                <h5>Key Roles:</h5>
+                <i class='bx bxs-right-arrow'>Design 50kN-grip-force hydraulic clamping jaws with a combination of a gear rack and two pinions by using SolidEdge.</i>
+                <i class='bx bxs-right-arrow'>Presenting the clamping mechanism to the company staff at the end of the internship.</i>
+                <i class='bx bxs-right-arrow'>Carry out 4 types of material testing, including tensile, compressive, impact, and fatigue tests.</i><br>
+                <i class='bx bxs-right-arrow'>Analyse the data from the material testing.</i>
+            </div>
+            <div class="fadeimg-container">
+                <div class="fadeimg-img">
+                    <img src="experience\intern\whole.jpg" id="img1" class="fadeimg active">
+                    <img src="experience\intern\person.jpg" id="img2" class="fadeimg ">
+                    <img src="experience\intern\visit.jpg" id="img3" class="fadeimg ">
+                    <img src="experience\intern\supervisor1.jpg" id="img4" class="fadeimg ">
+                </div>
+                
+            </div>
+            <div class="fade-dot">
+                <button type="button" class="fade active" onclick="activeIMG('img1',event,'exe-popup4')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img2',event,'exe-popup4')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img3',event,'exe-popup4')"></button>
+                <button type="button" class="fade" onclick="activeIMG('img4',event,'exe-popup4')"></button>
+            </div>
+            <div class="back">
+                <button type="button" onclick="closePopUP('exe-popup4')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="port-popup1">
+        <div class="bg-video">
+            <video autoplay muted loop id="fsec-run">
+                <source src="FSEC\fsec_run.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="popup-container">
+
+            <div class="popup-main">
+                <h4>Formula Student Electric Car</h4>
+                <p>Four years of experience in the Formula Student Electric Car (FSEC) competition in China region. This experience allows me to have a strong background in automobile 3D modeling design and manufacturing, not restricted to only mechanical system design such as chassis, aerodynamics, suspension, etc, but also includes electrical system design such as accumulator, wiring hardness, etc. Working as a team, also allows me to improve my vertical and horizontal communication skills as well as my problem-solving skills.</p>
+                
+            </div>
+            
+            <div class="port-popup" id="port-popup1-1">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Chassis Design and Manufacture</i></h5>
+                        <i class='bx bxs-right-arrow'>2D basic model was analaysed to obtain a reasonable range of torsional stiffness under 40-60 mass distribution (Oversteer setting). Analysis shows torsional stiffness should be about 4 to 6 times of front rolling stiffness.</i>
+                        <i class='bx bxs-right-arrow'>Tubular chassis frame underwent topology analysis on 5% to 15% of whole surface body in Ansys to obtain optimum triangulation structure and was constructed in Solidworks.</i>
+                        <i class='bx bxs-right-arrow'>The cockpit was designed after 3D scanning the ergonomics of our drivers on the ergonomic kit.</i>
+                        <i class='bx bxs-right-arrow'>The CAD Model was simulated in Ansys Structural to obtain torsional stiffness of about 1800N/deg</i>
+                        <i class='bx bxs-right-arrow'>Real world torsional testing was conducted and show 20% lower in torsional stiffness</i>
+                        <i class='bx bxs-right-arrow'>The chassis was built with 4130 Steel Alloy and underwent 3D scanning to check the misallignment with the CAD model.</i>
+                        <i class='bx bxs-right-arrow'>The car seat was manufactured with 8-layer of prepreg unidirectional carbon fibre.</i>
+                        <i class='bx bxs-right-arrow'>Half monocoque chassis was also designed but was not manufactured due to time constraint</i>
+                        <i class='bx bxs-right-arrow'>3-point bending test and perimeter sheat test on carbon fibre composite with sandwitch structure</i>
+                    
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSEC\chassis\CADModel.png" id="img1" class="right-fadeimg active">
+                            <img src="FSEC\chassis\3DScan.jpg" id="img2" class="right-fadeimg ">
+                            <img src="FSEC\chassis\Topology.png" id="img3" class="right-fadeimg ">
+                            <img src="FSEC\chassis\AnsysSimulation.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup1-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup1-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup1-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup1-1')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup1-2">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Aerodynamic System Design and Manufacture</i></h5>
+                        <i class='bx bxs-right-arrow'>Lap time simulation analysis to study effectiveness of aerodynamic packages to estimate the optimum L/D ratio.</i>
+                        <i class='bx bxs-right-arrow'>CAD Model was constructed with mainly surface modelling in Solidworks.</i>
+                        <i class='bx bxs-right-arrow'>CFD Simulation was conducted with Ansys Fluent to obtain Downforce and Dragforce as well as L/D ratio.</i>
+                        <i class='bx bxs-right-arrow'>To achieve lightweight and minimum cost, the airfoil was manufactured CFRP using resin infusion while the inner structure was made with balsa wood spars, aluminium plate and polycarbonate carbon fiber. </i>
+                        <i class='bx bxs-right-arrow'>Endplate is manufactured with sandwiching two 3 layers of CFRP with PET foam.</i>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSEC\Aero\Picture6.png" id="img1" class="right-fadeimg active">
+                            <img src="FSEC\Aero\CFD Simulation.png" id="img2" class="right-fadeimg ">
+                            <img src="FSEC\Aero\Picture5.png" id="img3" class="right-fadeimg ">
+                            <img src="FSEC\Aero\Wing.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup1-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup1-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup1-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup1-2')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup1-3">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Accumulator Box Design and Manufacture</i></h5>
+                        <i class='bx bxs-right-arrow'>110 LiPo cells are connected in 110S1P (total 480V and 8kWhr) and seperated into 5 22S1P segments/sectors.</i><br>
+                        <i class='bx bxs-right-arrow'>The battery cells were held together with silicon tape SCP-040 with high thermal conductivity for effective hear dissipation and then secured by FR4 (Fireproof material) plates to form a segment/sector.</i><br>
+                        <i class='bx bxs-right-arrow'>The segments are designed to be seperated with steel plates insulated with Formex GK-10 (UL94 VTM-0 Rating).</i><br>
+                        <i class='bx bxs-right-arrow'>Foolproof design: The maintenance socket/plug 3 different models such that no same socket models are allowed to be positioned next to each other  or at the same sector. Only plug model with same key and keyway design are allowed to be plug into that specific socket. The high voltage wires are designed to have adequate length to avoid wrong plugins and crossing over.</i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSEC\battery\BatteryBox.png" id="img1" class="right-fadeimg active">
+                            <img src="FSEC\battery\BatteryBoxReal.jpg" id="img2" class="right-fadeimg ">
+                            <img src="FSEC\battery\Sector.png" id="img3" class="right-fadeimg ">
+                            <img src="FSEC\battery\cells.jpg" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup1-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup1-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup1-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup1-3')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup1-4">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Electrical Wire Hardness Manufacture</i></h5>
+                        <i class='bx bxs-right-arrow'>Wiring Diagram of the safety circuit of whole car.</i>
+                        <i class='bx bxs-right-arrow'>Prepare table to organise/easy-debug the sockets and corresponding plugs.</i>
+                        <i class='bx bxs-right-arrow'>Electrical wiring hardness manufacture with proper insulation with heat shrink tube.</i>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSEC\wiringhardness\Wiring Hardness.png" id="img1" class="right-fadeimg active">
+                            <img src="FSEC\wiringhardness\wiring1.png" id="img2" class="right-fadeimg ">
+                            <img src="FSEC\wiringhardness\wiring2.png" id="img3" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup1-4')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup1-4')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup1-4')"></button>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="back">
+                <button type="button" onclick="PortclosePopUP('port-popup1')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="port-popup2">
+        <div class="bg-video">
+            <video autoplay muted loop id="fsec-run">
+                <source src="FSAI\fsai_run.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Formula Student Autonomous Car</h4>
+                <p>Autonomous driving is the trend of driving technology in the automotive industry. I have been gaining experience in autonomous driving by joining the UH Racing Autonomous Team and taking part in the DDT class of Formula Student Autonomous in Silverstone, UK for the latest season (July 2024). We are successful to obtain the overall 6th position in the competition.</p>
+                
+            </div>
+            <div class="port-popup" id="port-popup2-1">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Sensor Mount Design and Manufacture</i></h5>
+                        <i class='bx bxs-right-arrow'>This year's sensor mount design focused on reducing weight from previous design and accomodate with additional sensors such as Jetson, SGB sensor, dual-antennas, etc.</i>
+                        <i class='bx bxs-right-arrow'>Complying with the rules, it is decided to shift back the whole sensor mount location and raise up the lidar and camera position to obtain maximum camera angle view. Therefore, base plate was just using three main vehicle mounting points instead of five.</i>
+                        <i class='bx bxs-right-arrow'>New camera hold was design and 3D-printed with over 50% weight less</i>
+                        <i class='bx bxs-right-arrow'>A drag reducer cover was designed and underwent CFD simulation. It is not used in the competition due to time constraint.</i>
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSAI\mount\FullCar.jpeg" id="img1" class="right-fadeimg active">
+                            <img src="FSAI\mount\SensorMount.jpeg" id="img2" class="right-fadeimg ">
+                            <img src="FSAI\mount\real.jpg" id="img3" class="right-fadeimg ">
+                            <img src="FSAI\mount\cfd.jpeg" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup2-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup2-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup2-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup2-1')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup2-2">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Local Planning and Control</i></h5>
+                        <i class='bx bxs-right-arrow'>Local planning is conducted by interpolating the midpoints of cones from both sides which the coordinates of cones is obtained from perception node.</i><br>
+                        <i class='bx bxs-right-arrow'>Control of the vehicle is achieved by pure pursuit algorithm by computing the angular velocity command that moves the robot from its current position to reach some look-ahead point in front of the vehicle.</i><br>
+                        <i class='bx bxs-right-arrow'>Configure the logic planning for different mission such as Acceleration, Skid-pad, Autocross (Sprint) and Track Drive. The logic is tested in EUFS simulator.</i><br>
+                        <i class='bx bxs-right-arrow'>Coding for local planning node and control node is constructed with python and run with ROS2 in Ubuntu 20.04.</i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSAI\LNC\midP.png" id="img1" class="right-fadeimg active">
+                            <img src="FSAI\LNC\gazebo.png" id="img2" class="right-fadeimg ">
+                            <img src="FSAI\LNC\PnC.png" id="img3" class="right-fadeimg ">
+                            <img src="FSAI\LNC\logic.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup2-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup2-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup2-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup2-2')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup2-3">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Race Line Strategy</i></h5>
+                        <i class='bx bxs-right-arrow'>Reference: Braghin, Francesco, et al. "Race driver model." Computers & Structures 86.13-14 (2008): 1503-1516.</i><br>
+                        <i class='bx bxs-right-arrow'>Center race line is discretized into many points, and treated as a “spline” so that the line will be continuous. -	Knowing the inner and outer limit of the race, the new path generating is the ratio (α) of the point of inner track shifting towards outer track.</i><br>
+                        <i class='bx bxs-right-arrow'>The shortest path and minimum curvature path can be formulated by setting up proper H matrixes and B matrixes and then calculated with quadratic programming to obtain the optimized value of the respective path</i><br>
+                        <i class='bx bxs-right-arrow'>The velocity profile will be generated with four steps: (1) Velocity profile due to curvature, friction coefficient, and drag coefficient; (2) Maximum velocity constraint; (3) Feed forward Algorithm (constraint the velocity with maximum acceleration); (4) Feed backward Algorithm (constraint the velocity with maximum deceleration)</i><br>
+                        <i class='bx bxs-right-arrow'>Final optimum race line will combine these two paths by assigning a weightage (e) to each path. By comparing the weightage from 0 to 1 to obtain the race line that takes lowest time.</i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="FSAI\raceline\track.png" id="img1" class="right-fadeimg active">
+                            <img src="FSAI\raceline\MinimumCurvePath.png" id="img2" class="right-fadeimg ">
+                            <img src="FSAI\raceline\ShortestPath.png" id="img3" class="right-fadeimg ">
+                            <img src="FSAI\raceline\speed.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup2-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup2-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup2-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup2-3')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <button type="button" onclick="PortclosePopUP('port-popup2')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="port-popup3">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Acoustic Project</h4>
+                <p>My acoustic projects focus on comprehensive noise assessment, including both airborne and groundborne noise. In the construction and tender stages, I conduct detailed evaluations to identify potential noise impacts according to Hong Kong Technical Memorandum. For airborne noise, I assess sources like machinery and site activities in accordance with ISO standard, ensuring compliance with regulations. For groundborne noise, I analyze vibrations transmitted through the ground. These assessments help in designing effective noise mitigation strategies, ensuring that projects meet environmental standards and community expectations.</p>
+                
+            </div>
+            <div class="port-popup" id="port-popup3-1">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>MTR C1201 Tung Chung West Station and Tunnels Tender Stage</i></h5>
+                        <i class='bx bxs-right-arrow'>A 1.3km westward extension from existing railway tunnel of Tung Chung Station and the new Tung Chung West Station (TCW). It involves the design and construction of a new station at Tung Chung West and a tunnel from the existing Tung Chung Station.</i><br>
+                        <i class='bx bxs-right-arrow'>Groundborne Noise Assessment of Tunnel Boring Machine (TBM) activity for tunnel excavation.</i><br>
+                        <i class='bx bxs-right-arrow'>Airborne Noise Assessment on all possible construction activities at TCW and inlet shaft excavation at Tung Chung Crescent (TCC) for TBM.</i><br>
+                        <i class='bx bxs-right-arrow'>Noise mitigation design and control including the arrangement of retractable noise barrier for the whole construction progress and noise enclosure design.</i><br>
+                        <i class='bx bxs-right-arrow'>Generate a full Construction Noise Mitigation Report (CNMP) in accordance with requirement of client and Hong Kong government.</i><br>
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="Acoustic\TCA.jpeg" id="img1" class="right-fadeimg active">
+                            <img src="Acoustic\Picture12.jpg" id="img2" class="right-fadeimg ">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup3-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup3-1')"></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup3-2">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Trunk Road T2 and Cha Kwo Ling Tunnel Construction Stage</i></h5>
+                        <i class='bx bxs-right-arrow'>This project is to construct the Trunk Road T2 and Cha Kwo Ling (CKL) Tunnel at the Former South Apron of the Kai Tak Development. The main scope includes the construction of a 3.4km dual two-lane trunk road, ventilation buildings, electrical and mechanical services, and other associated works.</i>
+                        <i class='bx bxs-right-arrow'>Groundborne Noise Assessment of TBM and other construction activity for tunnel excavation.</i>
+                        <i class='bx bxs-right-arrow'>Groundborne Noise Monitoring for TBM activity in Cha Kwo Ling Village.</i>
+                        <i class='bx bxs-right-arrow'>Airborne Noise Assessment on all possible construction activities.</i>
+                        <i class='bx bxs-right-arrow'>Sound Power Level (SWL) and Insertion Loss (IL) measurement for Construction Noise Permit (CNP) applications.</i>
+                        <i class='bx bxs-right-arrow'>Noise mitigation design includes noise enclosure, acoustic door, noise barrier, silencer, etc.</i>
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="Acoustic\enclosure2.jpeg" id="img1" class="right-fadeimg active">
+                            <img src="Acoustic\measure1.jpeg" id="img2" class="right-fadeimg ">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup3-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup3-2')"></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup3-3">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Central Kowloon Route – Central Construction Stage</i></h5>
+                        <i class='bx bxs-right-arrow'>A 4.7 km long dual 3-lane trunk road connecting the West Kowloon reclamation and the proposed Kai Tak Development, including a tunnel of about 3.9km long to relieve traffic congestion on the existing east-west roads across Central Kowloon</i><br>
+                        <i class='bx bxs-right-arrow'>Groundborne Noise Assessment of TBM and other construction activity for tunnel excavation.</i><br>
+                        <i class='bx bxs-right-arrow'>Groundborne Noise Monitoring for Drill and Break (D&B) activity at Yau Ma Tei.</i><br>
+                        <i class='bx bxs-right-arrow'>Airborne Noise Assessment on all possible construction activities for CNP applications.</i><br>
+                        <i class='bx bxs-right-arrow'>Sound Power Level (SWL) and Insertion Loss (IL) measurement of Powered Machine Equipment (PME).</i>
+                        <i class='bx bxs-right-arrow'>Noise mitigation design includes noise enclosure, acoustic door, noise barrier, silencer, etc.</i>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="Acoustic\enclosure.jpeg" id="img1" class="right-fadeimg active">
+                            <img src="Acoustic\Mitigate2.jpg" id="img2" class="right-fadeimg ">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup3-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup3-3')"></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <button type="button" onclick="PortclosePopUP('port-popup3')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="port-popup4">
+        <div class="popup-container">
+            <div class="popup-main">
+                <h4>Other Engineering Project</h4>
+                <p>Alongside major projects, I regularly engage in small and one-off projects to sharpen my technical skills. These include simulating tasks, exploring web development using HTML and CSS, and solving debugging challenges. These smaller tasks offer hands-on experience, allowing me to experiment with new tools and stay current with industry trends. They enhance my versatility across different technologies and complement my larger projects by providing continuous learning opportunities.</p>
+                
+            </div>
+            <div class="port-popup" id="port-popup4-1">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Nose Landing Gear Design Analysis</i></h5>
+                        <i class='bx bxs-right-arrow'>Static analysis and modal analysis are conducted in CATIA V5 with a given nose landing gear design under critical loading among taxiing, landing and taking-off. It is proved that the given design cannot handle the critical loading. Therefore, modification of the design was conducted and underwent the static analysis and modal analysis. The modified design is proven to achieve a safety factor of 6.9 under critical loading.</i>
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="landing gear\whole.png" id="img1" class="right-fadeimg active">
+                            <img src="landing gear\1.png" id="img2" class="right-fadeimg ">
+                            <img src="landing gear\3.png" id="img3" class="right-fadeimg ">
+                            <img src="landing gear\4.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup4-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup4-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup4-1')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup4-1')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup4-2">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Car Bumper Design Optimization</i></h5>
+                        <i class='bx bxs-right-arrow'>This project requires me to design a standalone bumper beam and crash box system at 60m/s and do crash analysis in CATIA V5 to test its crashworthiness. Further study is also conducted with different beam profiles to compare the Specific Energy Absorption (SEA) and the system's strength. However, it is noted that CATIA V5 is not a suitable tool for crash analysis, so static structural analysis with adequate force and acceleration (with a simplified crash pulse).</i>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="bumper\bumper.png" id="img1" class="right-fadeimg active">
+                            <img src="bumper\1.png" id="img2" class="right-fadeimg ">
+                            <img src="bumper\2.png" id="img3" class="right-fadeimg ">
+                            <img src="bumper\3.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup4-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup4-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup4-2')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup4-2')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup4-3">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>RedBull Front Wing CFD Simulation</i></h5>
+                        <i class='bx bxs-right-arrow'>I was tasked to finish CFD simulation on the given RedBull Front Wing. The simulation is required to be conducted in StarCCM+. With proper domain boundary that considered the ground effect, possible flow circulation error, wind-blocking errors, etc, the front wing is simulated under wind speed of 127km/h and 321.9km/h. The residual errors converged well and it appears to have low linearization error.</i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="redbull\2.png" id="img1" class="right-fadeimg active">
+                            <img src="redbull\4.png" id="img2" class="right-fadeimg ">
+                            <img src="redbull\mesh.jpg" id="img3" class="right-fadeimg ">
+                            <img src="redbull\result1.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup4-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup4-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup4-3')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup4-3')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup4-4">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Non-premixed Flame Combustion on EGR System Simulation</i></h5>
+                        <i class='bx bxs-right-arrow'>Referring to the paper written by Branco, et al (2016), It was required to prove there is a reduction in NOx production with the EGR system. Three simulations with different compositions O2, N2 and CO2 as oxidizers (with increasing composition of CO2 and reduction of N2) are conducted to simulate the oxidizer in the EGR system. The fuel is the composition of methane and H2. The simulation is conducted in Ansys Fluent.</i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="flame\1.jpg" id="img1" class="right-fadeimg active">
+                            <img src="flame\2.jpg" id="img2" class="right-fadeimg ">
+                            <img src="flame\3.jpg" id="img3" class="right-fadeimg ">
+                            <!-- <img src="SL\all.jpeg" id="img4" class="right-fadeimg "> -->
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup4-4')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup4-4')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup4-4')"></button>
+                        <!-- <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup4-4')"></button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup4-5">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Hydraulic Claws Design</i></h5>
+                        <i class='bx bxs-right-arrow'>This is a six-week internship in Jinan, China. I was assigned to the Design Department and managed to accomplish the task of designing hydraulic clamping jaws for a universal testing machine. SolidEdge was used to construct the 3D CAD Model and technical drawing. This project is my first experience to generate a professional product with many calculations and a comprehensive technical drawings that include manufacturing requirement such as concentricity, parallelity, roughness, etc.</i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="Hydraulic Claws\Whole.png" id="img1" class="right-fadeimg active">
+                            <img src="Hydraulic Claws\Claws.png" id="img2" class="right-fadeimg ">
+                            <img src="Hydraulic Claws\Rack and Pinion.png" id="img3" class="right-fadeimg ">
+                            <img src="Hydraulic Claws\Piston.png" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup4-5')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup4-5')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup4-5')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup4-5')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-popup" id="port-popup4-6">
+                <div class="popup-info-left">
+                    <div class="popup-info">
+                        <h5><i>Service Learning Project in Rwanda</i></h5>
+                        <i class='bx bxs-right-arrow'>This is a two-week project with collaboration with a team of 50 people including students from Hong Kong and Rwanda. We built 5 solar charging stations (12 solar charging panels each) and basic electrical appliances (light bulbs, radio, chargeable batteries, etc) for over 100 poor families in the village. In this process, we need to demonstrate the concept of design and manufacture of wiring hardness and safe operation to students from Rwanda. At the mean time, we cooperated with 20 local people from the village and students from Rwanda to install and wire basic electronic appliances in the houses of the families by the need of the families. </i><br>
+
+                    </div>
+                </div>
+                <div class="popup-info-right">
+                    <div class="right-fadeimg-container">
+                        <div class="right-fadeimg-img">
+                            <img src="SL\all.jpeg" id="img1" class="right-fadeimg active">
+                            <img src="SL\household.jpeg" id="img2" class="right-fadeimg ">
+                            <img src="SL\panel.jpeg" id="img3" class="right-fadeimg ">
+                            <img src="SL\wiring.jpeg" id="img4" class="right-fadeimg ">
+                        </div>
+                        
+                    </div>
+                    <div class="right-fade-dot">
+                        <button type="button" class="right-fade active" onclick="portactiveIMG('img1',event,'port-popup4-6')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img2',event,'port-popup4-6')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img3',event,'port-popup4-6')"></button>
+                        <button type="button" class="right-fade" onclick="portactiveIMG('img4',event,'port-popup4-6')"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <button type="button" onclick="PortclosePopUP('port-popup4')" >Back</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="copyright">
+            © Cheng Sheng Loong | All Rights Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
